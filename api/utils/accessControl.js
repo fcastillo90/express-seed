@@ -4,6 +4,6 @@ const checkPermissions = (userPermissions = [], allowedPermissions = []) =>
   allowedPermissions.length === 0 ? false : validations.checkIfInArray(userPermissions, allowedPermissions);
 
 const accessControl = {
-  checkPermissions,
+  checkPermissions
 };
 export default accessControl;

@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import Seed from './helloWorld';
+import HelloWorld from './helloWorld';
 
 const router = Router();
-router.use('/seed', Seed);
+router.use('/helloWorld', HelloWorld);
 
 export default router;

@@ -9,7 +9,7 @@ services:
 
   node:
     env_file:
-      - ./.env
+      - .env
     build: ./
     image: express/express-seed-nodejs-12.x:12.13.1-alpine3.10
     working_dir: /app

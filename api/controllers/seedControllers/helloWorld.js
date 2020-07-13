@@ -6,7 +6,7 @@ const getHelloWorld = async (req, res) => {
   try {
     const { headers, query } = req;
 
-    const { status, body } = await seedService.seedService({ query, consumer });
+    const { status, body } = await seedService.seedService({ query, headers });
     return res.status(status).json(body);
   } catch (err) {
     const response = await responseFormatter.formatter(responseCodes.BAD_REQUEST, []);
